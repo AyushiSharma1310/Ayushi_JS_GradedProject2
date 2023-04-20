@@ -22,14 +22,34 @@ body{
     border:2px solid;
     border-radius: 1px;
 }
-.btn1{
-    margin-right: 50px;
-    position: relative;
-}
-.btn2{
+
+.btn{
     margin-left: 50px;
     padding: 10px;
     position: relative;
+}
+
+.noResult {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-top: 100px;
+    margin-left: 150px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #888888;
+}
+
+.resultNotFound {
+    width: 300px;
+    height: 200px;
+    padding-right: 40px;
+        
+}
+.resultNotFoundText {
+    font-size: 30px;
 }
 .resume{
     display: flex;
@@ -70,7 +90,7 @@ body{
     margin-right: 160px;
     height: fit-content;
     padding: 32px;
-    margin-left: 0%;
+    margin-left: 0%;    
 }
 .rightSection{
     border: transparent;
@@ -78,9 +98,9 @@ body{
     height:fit-content;
 }
 .logo{
-    width: 70px;
-    height: 80px;
-    margin-left: 85%;
+    width: 100px;
+    height: 120px;
+    margin-left: 100%;
 }
 
 

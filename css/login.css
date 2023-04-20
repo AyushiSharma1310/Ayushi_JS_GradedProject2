@@ -28,6 +28,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.error {
+    display: none;
+    margin-top: 0;
+    color:red;
+}
 .input{
     padding: 10px;
     padding-left: 5px;

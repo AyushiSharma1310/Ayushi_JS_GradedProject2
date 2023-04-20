@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     <section>
         <div class="div">
-            <form action="Login" id="login">
-                <input type="text" placeholder="User Name" class="input">
-                <input type="text" placeholder="Password" class="input">
-                <button type="button" class="button">Login</button>
+            <p class="error" id="error">Invalid Credentials</p>
+            <form action="login" id="login">               
+                <input type="text" placeholder="Username:admin" class="input" id="username"/>
+                <input type="text" placeholder="Password:admin" class="input" id="password"/>
+                <button type="login" class="button">Login</button>
             </form>
         </div>
     </section>
+    <script src="../js/login.js"></script>
 </body>
 </html>

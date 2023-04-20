@@ -5,40 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="Resume.css">
+    <link rel="stylesheet" href="../css/resume.css">
 </head>
 <body>
   <div class="mainSec">
     <div class="header">
-        <div class="btn1">
+        <div class="btn" id="btn1" >
             <button>Previous</button>
         </div>
         <div class="searchBar">
             <input type="text" 
             placeholder="Search for keywords to filter the resume"
-            class="input">
+            class="input"
+            id="search">
         </div>
-        <div class="btn2">
+        <div class="btn" id="btn2">
             <button>Next</button>
         </div>
     </div>
     <div class="error" id="error">
-        <div class="no-result">
-        <img src="notFound.jpg" alt="notFound" class="resultNotFound"/>
+        <div class="noResult">
+        <img src="../other/notFound.jpg" alt="notFound" class="resultNotFound"/>
         <p class="resultNotFoundText">
             <b>Invalid search or No applications for this job</b>
           </p>
         </div>
-    <div class="resume">
+    </div>
+    <div class="resume" id="resume">
         <div class="resumeHeader">
             <div class="headerName">
-                <h1 class="name"></h1>
+                <h1 class="name" id="name"></h1>
                 <div class="appliedFor">
                     Applied for : <p class="appliedForPost" id="appliedFor"></p>
                 </div>
             </div>
             <div class="image">
-                <img src="./logo.jpeg" alt="logo" class="logo">
+                <img src="../other/logo.jpeg" alt="logo" class="logo" id="logo">
             </div>
         </div>
     
@@ -47,9 +49,9 @@
             <div class="personalInfo">
                 <h4>Personal Information</h4>
                 <ul class="info1">
-                    <li class="mobNumber"></li>
-                    <li class="email"></li>
-                    <li class="linkedIn">
+                    <li class="mobNumber" id="mobNumber"></li>
+                    <li class="email" id="email"></li>
+                    <li class="linkedIn" id="linkedIn">
                         <a href="#"></a>
                     </li>
                     
@@ -57,77 +59,108 @@
             </div>
             <div class="techSection">
                 <h4>Technical Skills</h4>
-                <ul class="info2">                
+                <ul class="info2" id="info2">                
                 </ul>
             </div>
             <div class="hobbies">
                 <h4>Hobbies</h4>
-                <ul class="info3"></ul>
+                <ul class="info3" id="info3"></ul>
             </div>
         </div>
         <div class="rightSection">
-            <div class="workExp">
+            <div class="workExp" id="workExp">
                 <h3>Work Experience in previous company</h3>
                 <div class="companyName-div">
-                    <p class="companyName">Company Name:</p>
+                    <p class="companyName" id="companyName">Company Name:</p>
+                    <span class="s-companyName" id="s-companyName">Company Name:</span>
                 </div>
                 <div class="position-div">
-                    <p class="position">Position:</p>
+                    <p class="position" id="position">Position:</p>
+                    <span class="s-position" id="s-position">Position:</span>
                 </div>
                 <div class="startDate-div">
-                    <p class="startDate">Start Date:</p>
+                    <p class="startDate" id="startDate">Start Date:</p>
+                    <span class="s-startDate" id="s-startDate">Start Date:</span>
                 </div>
                 <div class="endDate-div">
-                    <p class="endDate">End Date:</p>
+                    <p class="endDate" id="endDate">End Date:</p>
+                    <span class="s-endDate" id="s-endDate">End Date:</span>
                 </div>
                 <div class="summary-div">
-                    <p class="summary">Summary:</p>
+                    <p class="summary" id="summary">Summary:</p>
+                    <span class="s-summary" id="s-summary">Summary:</span>
                 </div>                
             </div>
-            <div class="projects">
+            <div class="projects" id="projects">
                 <h3>Projects</h3>
                 <div class="diabeticRetinopathy-div">
-                    <p class="diabeticRetinopathy">Diabetic Retinopathy:</p>
+                    <p class="diabeticRetinopathy" id="project">Diabetic Retinopathy:</p>
+                    <span id="s-project"></span>
                 </div>                              
             </div>
-            <div class="education">
+            <div class="education" id="education">
                 <h3>Education</h3>
+                    <div class="internnshipDiv">
                     <ul class="educationList">
                         <li>
                             <div class="ug-div">
-                                <p class="ug">UG:</p>
+                                <p class="ug" id="ug">UG:</p>
+                                <span class="s-education">UG:</span>
                             </div>  
                         </li>
                         <li>
                             <div class="pu-div">
-                                <p class="pu">PU:</p>
+                                <p class="pu" id="pu">PU:</p>
+                                <span class="s-education">PU:</span>
                             </div>  
                         </li>
                         <li>
                             <div class="highSchool-div">
-                                <p class="highSchool">High School:</p>
+                                <p class="highSchool" id="hs">High School:</p>
+                                <span class="s-education">High School:</span>
                             </div>  
                         </li>
-                    </ul>              
+                    </ul>
+                </div>              
             </div>
-            <div class="internship">
+            <div class="internship" id="internship">
                 <h3>Internship</h3>
+                <div class="internshipDiv">
                 <ul class="intershipList">
                     <li><div class="i-companyName-div">
-                        <p class="i-companyName">Company Name:</p>
+                        <p class="i-companyName" id="i-companyName">Company Name:</p>
+                        <span class="s-companyName" id="s-i-companyName">Company Name:</span>
                     </div></li>
                     <li><div class="i-position-div">
-                        <p class="i-position">Position:</p>
+                        <p class="i-position" id="i-position">Position:</p>
+                        <span class="s-position" id="s-i-position">Position:</span>
                     </div></li>
                     <li><div class="i-startDate-div">
-                        <p class="i-startDate">Start Date:</p>
+                        <p class="i-startDate" id="i-startDate">Start Date:</p>
+                        <span class="s-startDate" id="s-i-startDate">Start Date:</span>
                     </div></li>
                     <li>
                         <div class="i-endDate-div">
-                            <p class="i-endDate">End Date:</p>
+                            <p class="i-endDate" id="i-endDate">End Date:</p>
+                            <span class="s-endDate" id="s-i-endDate">End Date:</span>
                         </div>
                     </li>
                     <li><div class="i-summary-div">
-                        <p class="i-summary">Summary:</p>
+                        <p class="i-summary" id="i-summary">Summary:</p>
+                        <span class="s-summary" id="s-i-summary">Summary:</span>
                     </div></li>
-          
+                </div>
+            </div>
+            <div class="achievements">
+                <h3>Achievements</h3>
+                <div class="achievementDiv" id="achievementDiv"></div>
+                <ul class="achievementList" id="achievementList"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../js/resume.js" type="text-js"></script>
+<script src="../js/data.js" type="text-js"></script>
+</body>
+</html>
